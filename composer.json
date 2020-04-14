@@ -1,0 +1,17 @@
+{
+    "name": "cerebrum/demo-extension",
+    "type": "typo3-cms-extension",
+    "description": "Demo extension to show TYPO3 extension development",
+    "require": {
+        "typo3/cms-core": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cerebrum\\DemoExtension\\": "Classes"
+        }
+    },
+    "replace": {
+        "demo_extension": "self.version",
+        "typo3-ter/demo-extension": "self.version"
+    }
+}
